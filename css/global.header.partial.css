@@ -5,30 +5,30 @@
   .header__nav {
     @media (min-width: 600px) {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
 
     .header__logo {
-      font-weight: bold;
-      text-transform: uppercase;
       font-size: 3.5rem;
       text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
     }
 
     .header__menu {
       display: flex;
       flex-direction: column;
+      flex: 1;
 
       @media (min-width: 600px) {
         flex-direction: row;
         justify-content: space-around;
-        flex: 1;
       }
 
       .menu__item {
-        color: var(--text-color);
         text-decoration: none;
+        color: var(--text-color);
 
         &:hover {
           text-decoration: underline;
@@ -40,22 +40,19 @@
   .header__banner {
     background:
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../img/baby-yoda.svg");
-    /* background-attachment: fixed; */
-    min-height: 500px;
+      url(../img/baby-yoda.svg);
     background-size: cover;
+    min-height: 500px;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     .header__title {
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 3.5rem;
-      text-align: center;
-      color: var(--accent-color);
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--accent-color);
     }
   }
 }
